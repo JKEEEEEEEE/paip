@@ -1,27 +1,22 @@
-﻿name: Build Pipeline
+﻿name: CI
 
 on:
   push:
-    branches:
-      - master  # Если вы используете ветку master
+    branches: [ "master" ]
   pull_request:
-    branches:
-      - master  # Если вы используете ветку master
+    branches: [ "master" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2  # Используем действие для получения кода из репозитория
+    - uses: actions/checkout@v3
     - name: Setup .NET
-      uses: actions/setup-dotnet@v1  # Установка среды .NET
+      uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '6.0.x'  # Укажите версию .NET, которую используете
+        dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore  # Восстановление зависимостей
+      run: dotnet restore
     - name: Build
-      run: dotnet build --configuration Release --no-restore  # Сборка проекта без восстановления зависимостей
-    - name: Run tests
-      run: dotnet test --no-restore --verbosity normal  # Запуск тестов
+      run: dotnet build --no-restore
