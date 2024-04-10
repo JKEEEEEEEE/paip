@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\kursach_diplom_api.props" />
+</Project>
