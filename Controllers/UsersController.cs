@@ -171,10 +171,10 @@ namespace kursach_diplom_api.Controllers
 					return BadRequest("Не все поля заполнены");
 				}
 
-				HashAlgorithm hash = new SHA256Managed();
+				
 
 				string saltGenerate = generateSalt();
-
+				HashAlgorithm hash = new SHA256Managed();
 				string hashPassword = generateHashPassword(dto.Password, saltGenerate);
 
 				User user = new User();

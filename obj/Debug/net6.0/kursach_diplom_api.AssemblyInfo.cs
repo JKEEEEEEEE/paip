@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("kursach_diplom_api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+407eebd953a2bf153da00b25e21478506298bdb1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27efcdc857808e4472a9b38952c495b12b06d51e")]
 [assembly: System.Reflection.AssemblyProductAttribute("kursach_diplom_api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("kursach_diplom_api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

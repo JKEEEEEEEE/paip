@@ -30,14 +30,14 @@ namespace kursach_diplom_api.Controllers
 		{
 			var cities = await _context.Cities
 				.Join(
-					_context.Hotels, // Присоединяем таблицу Hotels
-					city => city.HotelId, // Связываем по HotelId
-					hotel => hotel.IdHotel, // Связываем с IdHotel в таблице Hotels
-					(city, hotel) => new // Создаем новый объект с необходимыми данными
+					_context.Hotels,
+					city => city.HotelId,
+					hotel => hotel.IdHotel, 
+					(city, hotel) => new 
 					{
-						CityId = city.IdCity, // Используем Id города из таблицы City
-						CityName = city.NameCity, // Используем имя города из таблицы City
-						HotelName = hotel.NameHotel, // Используем имя отеля из таблицы 
+						CityId = city.IdCity,
+						CityName = city.NameCity, 
+						HotelName = hotel.NameHotel,
 					})
 				.ToListAsync();
 

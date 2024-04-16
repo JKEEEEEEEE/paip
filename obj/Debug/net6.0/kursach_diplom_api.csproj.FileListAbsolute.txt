@@ -604,3 +604,4 @@ D:\vs proekts\kursach_diplom_api\kursach_diplom_api\obj\Debug\net6.0\scopedcss\b
 D:\vs proekts\kursach_diplom_api\kursach_diplom_api\obj\Debug\net6.0\kursach_.2E6B536E.Up2Date
 D:\vs proekts\kursach_diplom_api\kursach_diplom_api\obj\Debug\net6.0\kursach_diplom_api.genruntimeconfig.cache
 D:\vs proekts\kursach_diplom_api\kursach_diplom_api\obj\Debug\net6.0\ref\kursach_diplom_api.dll
+D:\vs proekts\kursach_diplom_api\kursach_diplom_api\obj\Debug\net6.0\kursach_diplom_api.sourcelink.json
